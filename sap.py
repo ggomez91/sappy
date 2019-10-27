@@ -58,7 +58,7 @@ def cat2():
 
 @hydra.main(config_path="config.yaml", strict=False)
 def my_app(cfg):
-    print(cfg.pretty())
+    #print(cfg.pretty())
 
     user = cfg.sap.user
     password = cfg.sap.password
