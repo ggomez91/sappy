@@ -13,8 +13,8 @@ toaster = ToastNotifier()
 
 def login(user, password):
     print("Opening SAP...")
-    proc = subprocess.Popen(["C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe"])
-    time.sleep(5)
+    subprocess.Popen(["C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe"])
+    time.sleep(6)
 
     print("Selecting Server...")
     pyautogui.press(["home", "down", "enter"])
